@@ -54,7 +54,7 @@
 			}
 		},
 		methods: {
-			sendUserData(e) {
+			sendUserData() {
 				this.$emit('answer', {answer: this.userAnswer});
 			},
 			goNext() {
@@ -103,7 +103,7 @@
 	label {
 		display: flex;
 		align-items: center;
-        cursor: pointer;
+		cursor: pointer;
 	}
 	label .num {
 		width: 30px;
@@ -120,7 +120,7 @@
 	label .question-text {
 		font-size: 16px;
 		color: #000000;
-  		line-height: 1.2;
+		line-height: 1.2;
 	}
 	.answer-part {
 		margin: 67px 65px 0;
@@ -143,26 +143,26 @@
 		line-height: 1.2;
 		margin-bottom: 25px;
 	}
-    .btn {
-        background-color: #0079c2;
-        margin: 0 auto;
-        display: block;
-        width: 200px;
-        height: 56px;
-        border: none;
-        outline: 0;
-        line-height: 56px;
-        font-size: 18px;
-        color: #ffffff;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-align: center;
-        cursor: pointer;
-    }
-    .btn span {
-        -moz-transform: matrix( 1.14414414414414,0,0,1.14292177121417,0,0);
-        -webkit-transform: matrix( 1.14414414414414,0,0,1.14292177121417,0,0);
-        -ms-transform: matrix( 1.14414414414414,0,0,1.14292177121417,0,0);
-        transform: matrix( 1.14414414414414,0,0,1.14292177121417,0,0);
-    }
+	.btn {
+		background-color: #0079c2;
+		margin: 0 auto;
+		display: block;
+		width: 200px;
+		height: 56px;
+		border: none;
+		outline: 0;
+		line-height: 56px;
+		font-size: 18px;
+		color: #ffffff;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: center;
+		cursor: pointer;
+	}
+	.btn span {
+		-moz-transform: matrix( 1.14414414414414,0,0,1.14292177121417,0,0);
+		-webkit-transform: matrix( 1.14414414414414,0,0,1.14292177121417,0,0);
+		-ms-transform: matrix( 1.14414414414414,0,0,1.14292177121417,0,0);
+		transform: matrix( 1.14414414414414,0,0,1.14292177121417,0,0);
+	}
 </style>
