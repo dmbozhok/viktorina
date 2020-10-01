@@ -168,12 +168,12 @@
 	@media screen and (max-width: 500px) {
 		.question-part {
 			padding: 40px 20px 0;
-		}
+		}/*
 		.question-header {
 			font-size: 16px;
 		}
 		label .question-text {
 			font-size: 14px;
-		}
+		}*/
 	}
 </style>

@@ -174,8 +174,7 @@ export default {
 	margin-top: 0;
 	width: 600px;
 	max-width: 100%;
-	height: 460px;
-	max-height: 100vh;
+	height: 600px;
 	position: relative;
 }
 .container {
