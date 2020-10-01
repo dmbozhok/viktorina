@@ -55,7 +55,7 @@
 		line-height: 1.2;
 		text-align: left;
 	}
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 500px) {
 		.final-slide {
 			padding: 40px 20px 0;
 		}

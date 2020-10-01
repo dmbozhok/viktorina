@@ -165,7 +165,7 @@
 		-ms-transform: matrix( 1.14414414414414,0,0,1.14292177121417,0,0);
 		transform: matrix( 1.14414414414414,0,0,1.14292177121417,0,0);
 	}
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 500px) {
 		.question-part {
 			padding: 40px 20px 0;
 		}
