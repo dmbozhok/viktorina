@@ -41,7 +41,7 @@
 		right: 0;
 	}
     .slide-title {
-        font-size: 23px;
+        font-size: 25px;
         font-weight: bold;
         text-transform: uppercase;
         line-height: 1.2;
@@ -49,7 +49,7 @@
         margin-bottom: 38px;
     }
 	.slide-text {
-		font-size: 15px;
+		font-size: 17px;
 		font-family: "Roboto";
 		color: #000000;
 		line-height: 1.2;
@@ -58,6 +58,12 @@
 	@media screen and (max-width: 500px) {
 		.final-slide {
 			padding: 40px 20px 0;
+		}
+		.slide-title {
+			font-size: 23px;
+		}
+		.slide-text {
+			font-size: 15px;
 		}
 	}
 </style>

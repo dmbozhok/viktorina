@@ -83,9 +83,9 @@
 		top:0;
 		left: 0;
 		right: 0;
+		font-size: 20px;
 	}
 	.question-header {
-		font-size: 18px;
 		font-weight: bold;
 		line-height: 1.2;
 		text-align: left;
@@ -111,14 +111,13 @@
 		flex: 0 0 30px;
 		border-radius: 50%;
 		border: 1px solid #0079c2;
-		font-size: 18px;
 		text-align: center;
 		line-height: 30px;
 		margin-right: 13px;
 		align-self: start;
 	}
 	label .question-text {
-		font-size: 16px;
+		font-size: 18px;
 		color: #000000;
 		line-height: 1.2;
 	}
@@ -131,14 +130,14 @@
 		right: 0;
 	}
 	.answer-header {
-		font-size: 23px;
+		font-size: 25px;
 		font-weight: bold;
 		text-transform: uppercase;
 		line-height: 1.2;
 		margin-bottom: 25px;
 	}
 	.answer-text {
-		font-size: 18px;
+		font-size: 20px;
 		color: #000000;
 		line-height: 1.2;
 		margin-bottom: 25px;
@@ -152,7 +151,7 @@
 		border: none;
 		outline: 0;
 		line-height: 56px;
-		font-size: 18px;
+		font-size: 20px;
 		color: #ffffff;
 		font-weight: bold;
 		text-transform: uppercase;
@@ -168,12 +167,19 @@
 	@media screen and (max-width: 500px) {
 		.question-part {
 			padding: 40px 20px 0;
-		}/*
-		.question-header {
-			font-size: 16px;
+			font-size: 18px;
 		}
 		label .question-text {
-			font-size: 14px;
-		}*/
+			font-size: 16px;
+		}
+		.answer-header {
+			font-size: 23px;
+		}
+		.answer-text {
+			font-size: 18px;
+		}
+		.btn {
+			font-size: 18px;
+		}
 	}
 </style>

@@ -35,7 +35,7 @@ export default {
 
 <style scoped>
     .slide-title {
-        font-size: 28px;
+        font-size: 30px;
         font-weight: bold;
         text-transform: uppercase;
         line-height: 1.2;
@@ -57,7 +57,7 @@ export default {
         border: none;
         outline: 0;
         line-height: 56px;
-        font-size: 18px;
+        font-size: 20px;
         font-family: "Roboto";
         color: #ffffff;
         font-weight: bold;
@@ -70,5 +70,13 @@ export default {
         -webkit-transform: matrix( 1.14414414414414,0,0,1.14292177121417,0,0);
         -ms-transform: matrix( 1.14414414414414,0,0,1.14292177121417,0,0);
         transform: matrix( 1.14414414414414,0,0,1.14292177121417,0,0);
+    }
+	@media screen and (max-width: 500px) {
+        .slide-title {
+            font-size: 28px;
+        }
+        .btn {
+            font-size: 18px;
+        }
     }
 </style>
