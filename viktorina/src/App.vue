@@ -49,8 +49,6 @@ import StartScreen from "./components/StartScreen";
 import FinalScreen from "./components/FinalScreen";
 import ProgressBar from "./components/ProgressBar";
 
-const ga = window.ga;
-
 export default {
 	name: 'app',
 	components: {
@@ -77,11 +75,11 @@ export default {
 		goToQuiz(){
 			this.stage = 0;
 			this.state = 'quiz';
-			ga('send','event','click_begin');
+			window.sendGA('click_begin');
 		},
 		getAnswer(data) {
 			let object = this.questions[this.stage];
-			ga('send','event','quest_' + (this.stage+1));
+			window.sendGA('quest_' + (this.stage+1));
 			if ( Array.isArray(data.answer) ) {
 				object.userAnswer = data.answer
 			} else {
