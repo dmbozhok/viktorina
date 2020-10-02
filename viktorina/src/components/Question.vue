@@ -58,7 +58,7 @@
 				this.$emit('answer', {answer: this.userAnswer});
 			},
 			goNext() {
-				this.$emit('next', {});
+				this.$emit('next');
 			},
 			isCorrectAnswer() {
 				if(Array.isArray(this.userAnswer)) {

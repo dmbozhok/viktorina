@@ -35,7 +35,7 @@
 						:mobile='isMobile'
 						:bg='defaultBg'
 						:bgMobile='defaultBgMobile'
-						@again='restart'
+						@restart='restart'
 						key="finish"
 					/>
 				</transition-group>
@@ -88,7 +88,7 @@ export default {
 			object.userAnswer.sort();
 			object.correctAnswer.sort();
 			this.part = "answer";
-			this.timeout = setTimeout(this.next,5000);
+			this.timeout = setTimeout(this.next,10000);
 		},
 		next(){
 			if(this.timeout) {
@@ -103,12 +103,13 @@ export default {
 			}
 		},
 		restart() {
+			window.sendGA('click_again');
 			this.stage = 0;
-			this.state = 'start';
 			this.part = "question";
+			this.state = 'quiz';
 			this.questions.forEach((item) => {
 				item.userAnswer.length = 0;
-			})
+			});
 		},
 		checkAnswer(question) {
 			if(Array.isArray(question.userAnswer)) {

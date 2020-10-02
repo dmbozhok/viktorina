@@ -19,7 +19,7 @@ export default {
     },
     methods: {
         start: function start() {
-            this.$emit('start', {});
+            this.$emit('start');
         }
     },
     computed: {
