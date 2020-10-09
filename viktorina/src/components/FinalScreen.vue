@@ -2,7 +2,6 @@
 	<div class="fullscreen">
         <div class="bg-part" :style="getBg"></div>
         <div class="slide-content">
-			<div class="slide-title1">Ваш результат:</div>
 			<div class="slide-title2"><span>{{result.title}}</span></div>
 			<div class="slide-text" v-html="result.html"></div>
 			<button class="btn" @click.prevent="restart">Пройти еще раз</button>
