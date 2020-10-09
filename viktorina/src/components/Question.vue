@@ -1,6 +1,7 @@
 <template>
-	<transition-group name="slide" class="fullscreen question-slide" :key='stage' :style="getBg" tag="div">
-		<div class="question-part" v-show="part == 'question'" key="part__question">
+	<transition-group name="slide" class="fullscreen" :key='stage' tag="div">
+		<div class="bg-part" :style="getBg" key="bg"></div>
+		<div class="slide-content" v-show="part == 'question'" key="part__question">
 			<div class="question-header">{{question}}</div>
 			<div class="question-items">
 				<div v-for='(item, index) in answers' :key="index" class="answer-item">
@@ -17,7 +18,7 @@
 				</div>	
 			</div>
 		</div>
-		<div class="answer-part" v-show="part == 'answer'" key="part__answer">
+		<div class="slide-content" v-show="part == 'answer'" key="part__answer">
 			<div class="answer-header">{{answerHeader}}</div>
 			<div class="answer-text">{{answerText}}</div>
 			<div class="btn-container">
@@ -117,9 +118,10 @@
 		align-self: start;
 	}
 	label .question-text {
-		font-size: 18px;
+		font-size: 16px;
 		color: #000000;
 		line-height: 1.2;
+		text-align: left;
 	}
 	.answer-part {
 		margin: 67px 65px 0;

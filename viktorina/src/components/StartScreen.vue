@@ -1,10 +1,13 @@
 <template>
-    <div class="fullscreen" :style="getBg">
-        <div class="slide-title"><span>{{title}}</span></div>
-        <button
-            class="btn"
-            @click.prevent="start"
-            ><span>Начать тест</span></button>
+    <div class="fullscreen">
+        <div class="bg-part" :style="getBg"></div>
+        <div class="slide-content">
+            <div class="slide-title"><span>{{title}}</span></div>
+            <button
+                class="btn"
+                @click.prevent="start"
+                ><span>Начать тест</span></button>
+        </div>
     </div>
 </template>
 
@@ -40,7 +43,7 @@ export default {
         text-transform: uppercase;
         line-height: 1.2;
         text-align: center;
-        margin: 65px auto 38px;
+        margin: 0 auto 38px;
     }
     .slide-title span {
         -moz-transform: matrix( 1.22381787295158,0,0,1.22381787295158,0,0);

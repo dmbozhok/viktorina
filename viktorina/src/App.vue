@@ -59,8 +59,8 @@ export default {
 	},
 	data () {
 		return {
-			defaultBg: 'img/pictures-1.jpg',
-			defaultBgMobile: 'img/pictures_mobile-1.jpg',
+			defaultBg: 'img/pictures_new-1.jpg',
+			defaultBgMobile: 'img/pictures_new-1.jpg',
 			questions: [],
 			resultTexts: [],
 			stage: 0,
@@ -177,7 +177,7 @@ export default {
 	margin-top: 0;
 	width: 600px;
 	max-width: 100%;
-	height: 600px;
+	height: 750px;
 	position: relative;
 }
 .container {
@@ -187,7 +187,17 @@ export default {
 	right: 0;
 	bottom: 0;
 	overflow: hidden;
-	background-color: #fefefe;
+	background-color: #f0f5fb;
+}
+.bg-part {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 334px;
+	overflow: hidden;
+	background-color: #f0f5fb;
+	z-index: 1;
 }
 .fullscreen {
 	position: absolute;
@@ -198,21 +208,17 @@ export default {
 	background-size: cover;
 	background-repeat: no-repeat;
 	z-index: 1;
+	background-color: #f0f5fb;
 }
-.fullscreen > * {
-	position: relative;
-	z-index: 3;
-}
-.fullscreen::before {
+.slide-content {
 	position: absolute;
-	display: block;
-	content: '';
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: rgba(255,255,255,0.6);
-	z-index: 2;
+	top: 262px;
+	left: 55px;
+	right: 55px;
+	bottom: 51px;
+	background-color: #ffffff;
+	z-index: 5;
+	padding: 20px 12px 12px;
 }
 
 .slide-leave-active,

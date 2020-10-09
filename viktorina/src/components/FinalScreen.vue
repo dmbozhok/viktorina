@@ -1,6 +1,7 @@
 <template>
-	<div class="fullscreen" :style="getBg">
-		<div class="final-slide">
+	<div class="fullscreen">
+        <div class="bg-part" :style="getBg"></div>
+        <div class="slide-content">
 			<div class="slide-title1">Ваш результат:</div>
 			<div class="slide-title2"><span>{{result.title}}</span></div>
 			<div class="slide-text" v-html="result.html"></div>
@@ -36,14 +37,6 @@
 </script>
 
 <style scoped>
-	.final-slide {
-		text-align: left;
-		padding: 67px 65px 0;
-		position: absolute;
-		top:0;
-		left: 0;
-		right: 0;
-	}
     .slide-title1 {
         font-size: 25px;
         font-weight: bold;
